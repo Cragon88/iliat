@@ -1,0 +1,99 @@
+navbar
+
+include ./spotlight.jade
+
+.main
+  .container
+    .row
+      .main__ignite-shine
+        h2.main__ignite-shine__title.col-xs-12 {{App.home.vision.title}}
+        .vertical-line
+          .vertical-line__hr-10
+        .main__ignite-shine__item.col-sm-4(ng-repeat="item in App.home.vision.items")
+          .main__ignite-shine__item__img
+            img(src="{{item.image}}" alt="")
+          h4.main__ignite-shine__item__name {{item.name}}
+          .main__ignite-shine__item__description {{item.description}}
+    .row
+      .main__courses
+        h2.main__courses__title.col-xs-12 {{App.home.courses.title}}
+        .vertical-line
+          .vertical-line__hr-10
+        .main__courses__item.col-sm-6.col-md-4(ng-repeat="item in App.home.courses.items track by $index")
+          .main__courses__item__logo--container
+            .main__courses__item__logo
+              img.main__courses__item__logo__img(src="{{item.image}}" alt="")
+              .main__courses__item__logo__content
+                h3.main__courses__item__logo__header Giới thiệu {{item.title}}
+                p.main__courses__item__logo__body {{item.content}}
+              h3.main__courses__item__logo__tagline {{item.title}}
+  .main__feedback
+    .main__feedback__carousel
+      .owl-carousel.main__feedback__carousel--container
+        .main__feedback__carousel__item
+          .main__feedback__carousel__item--container
+            .main__feedback__carousel__item__img
+              img(src="/assets/images/home/feedbacks/testimonial-Tran-Ha.jpg" alt="")
+            .main__feedback__carousel__item__text
+              span "Nhờ trên lớp được học kĩ càng và phân tích tại chỗ các case kinh điển; đồng thời, học cùng nhiều bạn rất giỏi, nên mình đã học được rất nhiều. Một điểm thú vị nữa là các lớp học nhóm bắt buộc, cả online và offline. Khi làm bài một mình, mình không có áp lực phải tự lý giải với bản thân vì sao lại đưa ra lựa chọn này. Chỉ khi học cùng nhóm, mình buộc phải tìm mọi cách bảo vệ lựa chọn của mình trước nhiều phản biện bất ngờ mà mình không nghĩ tới. Cảm ơn ILIAT rất nhiều và luôn sẵn lòng giới thiệu về ILAT cho nhiều nhiều bạn nữa"
+            .main__feedback__carousel__item__accepted
+              span.glyphicon.glyphicon-ok
+            h3.main__feedback__carousel__item__name Trần Hà - 720 GMAT (Top 6% Thế giới )
+        .main__feedback__carousel__item
+          .main__feedback__carousel__item--container
+            .main__feedback__carousel__item__img
+              img(src="/assets/images/home/feedbacks/testimonail_LuongAnhPhuong.jpg" alt="")
+            .main__feedback__carousel__item__text
+              span "ILIAT với mình là ấn tượng là một cái lớp học nho nhỏ, nơi mọi người tương tác và gắn bó với nhau, giúp nhau cùng tiến bộ. Đối với em, mô hình lớp học này thật sự là hiệu quả : không phải theo cách bắt ép, miễn cưỡng mà nó thật sự khiến con người ta kiên trì cảm hứng. Cảm giác đó thật sự tuyệt vời hơn tất cả. Giữa những ngày nắng thế này, em tự cảm thấy lớp học này giống như việc phải đi qua một quãng đường rất oi để đến nơi, nếu đi một mình thì sẽ rất buồn chán và mệt mỏi, nhưng được sát cánh cùng mọi người và truyền động lực nên vẫn không cảm thấy mệt"
+            .main__feedback__carousel__item__accepted
+              span.glyphicon.glyphicon-ok
+            h3.main__feedback__carousel__item__name Lương Anh Phương
+        .main__feedback__carousel__item
+          .main__feedback__carousel__item--container
+            .main__feedback__carousel__item__img
+              img(src="/assets/images/home/feedbacks/Testimonial-Trang-Nguyen.jpg" alt="")
+            .main__feedback__carousel__item__text
+              span "Mình cực kì cảm ơn 2 thầy giáo siêu nhiệt tình Tu Anh Pham ít tóc và Dũng Tiến Lê ngực to đến khi ngồi vào phòng thi rồi mới thấm thía hết một số lời dạy vàng ngọc. Cảm ơn chị Yến và mấy đứa trong lớp đã cho chị một khóa học không thể vui hơn được, nhớ mọi người đến mức tuần lại nằm mơ thấy lớp mình 1 lần. Cảm ơn mọi người trong ILIAT đều cực kỳ thân thiện và tận tụy với lớp"
+            .main__feedback__carousel__item__accepted
+              span.glyphicon.glyphicon-ok
+            h3.main__feedback__carousel__item__name Nguyễn Thùy Trang - 750 GMAT
+        .main__feedback__carousel__item
+          .main__feedback__carousel__item--container
+            .main__feedback__carousel__item__img
+              img(src="/assets/images/home/feedbacks/testimonail-thutra.jpg" alt="")
+            .main__feedback__carousel__item__text
+              span "Mình thực sự bất ngờ vì hiệu quả lớp học đem lại: giáo trình của ILIAT chọn lọc từ các tài liệu uy tín, được hệ thống rất khoa học – đỡ được công bơi trong tài liệu mình đã vô cùng cảm kích Giáo viên hướng dẫn cách tiếp cận đề bài và các bước làm bài rất hiệu quả, còn nhiệt tình vui tính nữa chứ ! (Có lần làm bài thi “vất vả” bọn mình còn được mua nước mía cho nữa). Thêm vào đó, nhờ các lớp tự học và việc đến lớp trao đổi về mẹo nhớ từ, các ví dụ, mình hứng thú và học hiệu quả hơn hẳn. Rất cám ơn ILIAT đã tổ chức lớp học để sinh viên kinh tế eo hẹp như mình cảm thấy “dễ thở” hơn rất nhiều"
+            .main__feedback__carousel__item__accepted
+              span.glyphicon.glyphicon-ok
+            h3.main__feedback__carousel__item__name Nguyễn Thu Trà
+        .main__feedback__carousel__item
+          .main__feedback__carousel__item--container
+            .main__feedback__carousel__item__img
+              img(src="/assets/images/home/feedbacks/testimonial_QuangHuy.jpg" alt="")
+            .main__feedback__carousel__item__text
+              span "ILIAT đã mang lại một môi trường học tiếng Anh rất tốt cho những học viên ở đây. Mọi thành viên của ILIAT đều nhiệt tình, năng nổ, và rất dễ gần làm cho các học viên đều cảm thấy thoải mái, vui vẻ khi được học cùng, dạy bởi những anh chị không hơn kém tuổi mình nhiều mà lại rất tài năng"
+            .main__feedback__carousel__item__accepted
+              span.glyphicon.glyphicon-ok
+            h3.main__feedback__carousel__item__name Nguyễn Quang Huy - 7.0 IELTS
+  .container
+    .row
+      .main__news
+        h2.main__news__title.col-xs-12 {{App.home.news.title}}
+        .vertical-line
+          .vertical-line__hr-10
+        .main__news__img.col-md-4(ng-repeat="img in App.home.news.images track by $index")
+          img(src="{{img}}" alt="")
+    .row
+      .main__bottom
+        .main__bottom__item.col-sm-6
+          h4.main__bottom__item__title {{App.home.bottom.connect}}
+          .vertical-line.vertical-line--left
+            .vertical-line__hr-20
+          .main__bottom__item__content
+        .main__bottom__item.col-sm-6
+          h4.main__bottom__item__title {{App.home.bottom.video}}
+          .vertical-line.vertical-line--left
+            .vertical-line__hr-20
+          .main__bottom__item__content
+
+footer

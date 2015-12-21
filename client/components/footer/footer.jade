@@ -1,0 +1,21 @@
+.container
+  .row
+    .footer__left.col-xs-9
+      .footer__menu
+        ul
+          li(ng-repeat="menu in App.footer.menu track by $index")
+            a(href="#")
+              span {{menu}}
+      .vertical-line.vertical-line--left
+        .vertical-line__hr-100.vertical-line__hr-100--white
+      .footer__left__contact--container
+        .footer__left__contact(ng-repeat="item in App.footer.contacts track by $index")
+          .row
+            .footer__left__contact__address.col-xs-7 {{item.address}}
+            .footer__left__contact__phone.col-xs-5 {{item.phone}}
+    .footer__right.col-xs-3
+      .footer__menu {{App.footer.follow}}
+      .vertical-line.vertical-line--left
+        .vertical-line__hr-100.vertical-line__hr-100--white-double
+
+

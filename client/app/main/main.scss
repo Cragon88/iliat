@@ -104,7 +104,7 @@
         }
 
         @media (min-width: $screen-desktop) {
-          height: 200px;
+          height: 180px;
           font-size: 16px;
         }
 
@@ -134,14 +134,26 @@
 
         &__tagline {
           position: absolute;
-          top: 60%;
+          top: 50%;
           right: 0;
-          line-height: 50px;
+          line-height: 40px;
           background-color: $footer-color;
           color: white;
           text-transform: uppercase;
           padding: 0 15px;
           z-index: 9;
+          @media (min-width: $screen-phone) {
+            top: 60%;
+            line-height: 50px;
+          }
+          @media (min-width: $screen-tablet) {
+            top: 50%;
+            line-height: 40px;
+          }
+          @media (min-width: $screen-desktop) {
+            top: 60%;
+            line-height: 50px;
+          }
         }
 
         &:hover {
@@ -169,6 +181,7 @@
           margin: 0;
           padding-bottom: 15px;
           text-transform: uppercase;
+          font-weight: bold;
 
           //@media (min-width: $screen-tablet) {
           //  font-size: 13px;
@@ -184,20 +197,53 @@
           display: -webkit-box;
           margin: 0;
           //margin-bottom: 5px;
-          -webkit-line-clamp: 7;
+          -webkit-line-clamp: 4;
           -webkit-box-orient: vertical;
           overflow: hidden;
           text-overflow: ellipsis;
+          font-size: 12px;
+
+          @media (min-width: $screen-phone) {
+            -webkit-line-clamp: 7;
+            font-size: 14px;
+          }
 
           @media (min-width: $screen-tablet) {
-            -webkit-line-clamp: 6;
+            -webkit-line-clamp: 4;
           }
 
           @media (min-width: $screen-desktop) {
+            -webkit-line-clamp: 3;
+            font-size: 12px;
+          }
+          @media (min-width: $screen-lg-desktop) {
             -webkit-line-clamp: 7;
+            font-size: 14px;
           }
         }
 
+        &__link{
+          margin-top: 15px;
+          a {
+            text-transform: uppercase;
+            font-weight: bold;
+            color: white;
+            font-size: 12px;
+            &:hover {
+              color: white;
+            }
+            @media (min-width: $screen-phone) {
+              font-size: 14px;
+            }
+
+            @media (min-width: $screen-desktop) {
+              font-size: 12px;
+            }
+            @media (min-width: $screen-lg-desktop) {
+              font-size: 14px;
+            }
+          }
+        }
       }
     }
   }

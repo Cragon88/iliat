@@ -16,7 +16,7 @@ include ./spotlight.jade
           .main__ignite-shine__item__description {{item.description}}
     .row
       .main__courses
-        h2.main__courses__title.col-xs-12 {{App.home.courses.title}}
+        h3.main__courses__title.col-xs-12 {{App.home.courses.title}}
         .vertical-line
           .vertical-line__hr-10
         .main__courses__item.col-sm-6.col-md-4(ng-repeat="item in App.home.courses.items track by $index")
@@ -24,9 +24,13 @@ include ./spotlight.jade
             .main__courses__item__logo
               img.main__courses__item__logo__img(src="{{item.image}}" alt="")
               .main__courses__item__logo__content
-                h3.main__courses__item__logo__header Giới thiệu {{item.title}}
+                .main__courses__item__logo__header Giới thiệu {{item.title}}
                 p.main__courses__item__logo__body {{item.content}}
-              h3.main__courses__item__logo__tagline {{item.title}}
+                .main__courses__item__logo__link
+                  a(href="#")
+                    span.glyphicon.glyphicon-chevron-right.icon--circle
+                    span Read More
+              h4.main__courses__item__logo__tagline {{item.title}}
   .main__feedback
     .main__feedback__carousel
       .owl-carousel.main__feedback__carousel--container

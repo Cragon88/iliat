@@ -29,6 +29,26 @@ body {
   color: $text-color;
 }
 
+.icon--circle {
+  display:inline-block;
+  padding:0.55em;
+  border-width:2px;
+  border-style:solid;
+  border-radius:100%;
+  margin-right:0.5em;
+  &:hover{
+    text-decoration:none;
+  }
+  &:before {
+    display:block;
+    text-align:center;
+    width:1em;
+    height:1em;
+    line-height:1em;
+    font-size:0.625em;
+    cursor:pointer;
+  }
+}
 
 .vertical-line {
   width: 100%;

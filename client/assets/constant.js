@@ -72,32 +72,32 @@ var App = {
         {
           image: "/assets/images/home/courses/khoahocgmat.jpg",
           title: "Khóa học Gmat",
-          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at odio vulputate, vestibulum turpis non, posuere nisl. Donec vulputate ligula eget tortor lobortis, ac commodo purus maximus."
+          content: "Hiện thực hóa giấc mơ học kinh tế"
         },
         {
           image: "/assets/images/home/courses/khochocielts.jpg",
           title: "Khóa học ielts",
-          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at odio vulputate, vestibulum turpis non, posuere nisl. Donec vulputate ligula eget tortor lobortis, ac commodo purus maximus."
+          content: "Tấm pasport của bạn"
         },
         {
           image: "/assets/images/home/courses/khoahoccfa.jpg",
           title: "Khóa học cfa",
-          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at odio vulputate, vestibulum turpis non, posuere nisl. Donec vulputate ligula eget tortor lobortis, ac commodo purus maximus."
+          content: "Trở thành nhà đầu tư tài chính chuyên nghiệp"
         },
         {
           image: "/assets/images/home/courses/khoahocgre.jpg",
           title: "Khóa học gre",
-          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at odio vulputate, vestibulum turpis non, posuere nisl. Donec vulputate ligula eget tortor lobortis, ac commodo purus maximus."
+          content: "Tấm visa trên miền đất hứa"
         },
         {
           image: "/assets/images/home/courses/khoahoctoefl.jpg",
           title: "Khóa học toefl",
-          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at odio vulputate, vestibulum turpis non, posuere nisl. Donec vulputate ligula eget tortor lobortis, ac commodo purus maximus."
+          content: "Giới thiệu khóa học toefl"
         },
         {
           image: "/assets/images/home/courses/khochocacca.jpg",
           title: "Khóa học acca",
-          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at odio vulputate, vestibulum turpis non, posuere nisl. Donec vulputate ligula eget tortor lobortis, ac commodo purus maximus."
+          content: "BIG 4 trong tầm tay"
         }
       ]
     },
@@ -112,7 +112,12 @@ var App = {
     },
 
     bottom: {
-      connect: "Kết nối với chúng tôi",
+      connect: {
+        title: "Kết nối với chúng tôi",
+        image: "/assets/images/home/connect-us.png",
+        link: "https://www.facebook.com/ILIAT.Education"
+      },
+
       video: "Video"
     }
   }

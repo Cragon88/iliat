@@ -1,38 +1,53 @@
 ﻿.spotlight{
     $spotlight-height: 512px;
-    margin-top: 65px;
+    margin-top: 95px;
     width: 100%;
     position: relative;
     overflow: hidden;
-    height: $spotlight-height;
-    background-size: cover;
+    height: $spotlight-height * 0.25;
+    background-size: 100% auto;
     background-position: center center;
     background-repeat: no-repeat;
+    background-image: url(/assets/images/home/spotlight_small.jpg);
     @media (min-width: $screen-phone) {
-        margin-top: 87px;
+        margin-top: 88px;
+        height: $spotlight-height * 0.45;
     }
     @media (min-width: $screen-tablet) {
-        margin-top: 80px;
+        background-image: url(/assets/images/home/spotlight.jpg);
+        //margin-top: 80px;
+    }
+    @media (min-width: $screen-desktop) {
+        //height: $spotlight-height * 0.3;
+        margin-top: 95px;
     }
     @media (min-width: $screen-lg-desktop) {
-        margin-top: 93px;
+        //margin-top: 95px;
+        height: $spotlight-height * 0.75;
     }
 
-    &__bg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height:100%;
-        width: 100%;
-        background-image:url(/assets/images/home/spotlight.png);
-        background-position:center top;
-        background-repeat: no-repeat;
-        background-attachment:fixed;
-        z-index: -1;
-        @media (min-width:$screen-desktop){
-            background-size:100% auto;
-        }
+    @media (min-width: $screen-super-very-lg-desktop) {
+        height: $spotlight-height;
+        background-size: cover;
+        margin-top: 110px;
     }
+
+    //&__bg {
+    //    position: absolute;
+    //    top: 0;
+    //    left: 0;
+    //    height:100%;
+    //    width: 100%;
+    //    background-image:url(/assets/images/home/spotlight.png);
+    //    //background-position:right top;
+    //    background-repeat: no-repeat;
+    //    //background-attachment:fixed;
+    //    background-size:100% auto;
+    //    z-index: -1;
+    //    @media (min-width:$screen-desktop){
+    //        background-size:100% auto;
+    //    }
+    //}
 
     &__content {
         position:absolute;
@@ -47,11 +62,11 @@
                 width: 60%;
             }
             margin: 0 auto;
-            border: 5px solid white;
+            border: 5px solid $web-color;
             padding: 0 15px;
             &__text {
                 text-align: center;
-                color:white;
+                color:$web-color;
                 line-height: 50px;
                 text-transform: uppercase;
                 font-size: 24px;

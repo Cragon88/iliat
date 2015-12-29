@@ -24,12 +24,12 @@ include ./spotlight.jade
             .main__courses__item__logo
               img.main__courses__item__logo__img(src="{{item.image}}" alt="")
               .main__courses__item__logo__content
-                .main__courses__item__logo__header Giới thiệu {{item.title}}
-                p.main__courses__item__logo__body {{item.content}}
-                .main__courses__item__logo__link
-                  a(href="#")
-                    span.glyphicon.glyphicon-chevron-right.icon--circle
-                    span Read More
+                .main__courses__item__logo__header {{item.content}}
+                //p.main__courses__item__logo__body {{item.content}}
+                //.main__courses__item__logo__link
+                //  a(href="#")
+                //    span.glyphicon.glyphicon-chevron-right.icon--circle
+                //    span Read More
               h4.main__courses__item__logo__tagline {{item.title}}
   .main__feedback
     .main__feedback__carousel
@@ -90,10 +90,13 @@ include ./spotlight.jade
     .row
       .main__bottom
         .main__bottom__item.col-sm-6
-          h4.main__bottom__item__title {{App.home.bottom.connect}}
+          h4.main__bottom__item__title {{App.home.bottom.connect.title}}
           .vertical-line.vertical-line--left
             .vertical-line__hr-20
           .main__bottom__item__content
+            .main__bottom__item__content__img
+              a(href="{{App.home.bottom.connect.link}}" target="_blank")
+               img(src="{{App.home.bottom.connect.image}}" alt="")
         .main__bottom__item.col-sm-6
           h4.main__bottom__item__title {{App.home.bottom.video}}
           .vertical-line.vertical-line--left

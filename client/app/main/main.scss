@@ -180,16 +180,21 @@
         &__header {
           margin: 0;
           padding-bottom: 15px;
+          padding-top: 50px;
           text-transform: uppercase;
           font-weight: bold;
-
-          //@media (min-width: $screen-tablet) {
-          //  font-size: 13px;
-          //}
-          //
-          //@media (min-width: $screen-desktop) {
-          //  font-size: 16px;
-          //}
+          font-size: 18px;
+          text-align: center;
+          @media (min-width: $screen-phone) {
+            padding-top: 100px;
+          }
+          @media (min-width: $screen-tablet) {
+            padding-top: 50px;
+          }
+          @media (min-width: $screen-very-lg-desktop) {
+            font-size: 20px;
+            padding-top: 100px;
+          }
         }
 
         &__body{
@@ -329,6 +334,7 @@
         background-color: $web-color;
         color: white;
         padding: 25px;
+        min-height: 400px;
         &--container {
           width: 90%;
           margin: 0 auto;
@@ -352,12 +358,12 @@
           text-transform:none;
           font-style: italic;
           font-size: 16px;
-          //display: block; /* Fallback for non-webkit */
-          //display: -webkit-box;
-          //-webkit-line-clamp: 3;
-          //-webkit-box-orient: vertical;
-          //overflow: hidden;
-          //text-overflow: ellipsis;
+          display: block; /* Fallback for non-webkit */
+          display: -webkit-box;
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
 
         &__accepted {
@@ -413,12 +419,25 @@
       &__content {
         margin-top: 15px;
         width: 100%;
-        height: 200px;
-        border: 1px solid $text-color;
+        //border: 1px solid $text-color;
 
         @media (min-width: $screen-desktop) {
           margin-top: 25px;
         }
+        &__img {
+          position: relative;
+          width: 100%;
+          height:150px;
+          img {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate3d(0, -50%, 0);
+            width: 50%;
+            height: auto;
+          }
+        }
+
       }
     }
   }
